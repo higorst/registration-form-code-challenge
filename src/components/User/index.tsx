@@ -1,7 +1,9 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Colors } from '../../styles/Colors';
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
+
 import { Card, UserAndType, DocumentAndButton, TypeUser, NameUser, DocumentUser, Touchable } from './styles'
+import Popup from '../Popup';
 import RegexControllers from '../../controllers/Regexcontrollers';
 
 // Redux
@@ -21,10 +23,25 @@ interface UserType {
 }
 function User(props: UserType) {
 
+    const [showPopup, setShowPopup] = useState(false)
+
     return (
         <Card
             borderColor={(props.user.type === Constants.typeUserDataIndividual) ? Colors.individual : Colors.business}
         >
+            <Popup
+                visible={showPopup}
+                onCancel={() => setShowPopup(false)}
+                user_name={props.user.name}
+                onOk={() => {
+                    setShowPopup(false)
+                    props.delete({
+                        name: props.user.name,
+                        document: props.user.document,
+                        type: props.user.type
+                    })
+                }}
+            />
             <UserAndType>
                 <TypeUser
                     color={(props.user.type === Constants.typeUserDataIndividual) ? Colors.individual : Colors.business}
@@ -36,11 +53,7 @@ function User(props: UserType) {
                     RegexControllers.handleRegex(props.user.type === Constants.typeUserDataIndividual, props.user.document.toString(), true)
                 }</DocumentUser>
                 <Touchable
-                    onPress={() => props.delete({
-                        name: props.user.name,
-                        document: props.user.document,
-                        type: props.user.type
-                    })}
+                    onPress={() => setShowPopup(true)}
                 >
                     <Icon
                         name={Constants.iconButtonRemoveUser}
