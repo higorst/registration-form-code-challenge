@@ -4,6 +4,10 @@ import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 import { Card, UserAndType, DocumentAndButton, TypeUser, NameUser, DocumentUser, Touchable } from './styles'
 import RegexControllers from '../../controllers/Regexcontrollers';
 
+// Redux
+import { connect } from "react-redux";
+import { SAGA_DELETE } from '../../redux/sagas/types';
+
 import { Constants } from '../../constants';
 
 interface UserType {
@@ -49,4 +53,13 @@ function User(props: UserType) {
     )
 }
 
-export default User
+const mapStateToProps = (state: any) => ({
+    sending: state.register.sending,
+})
+const mapDispatchToProps = (dispatch: any) => ({
+    delete: (data: UserType) => dispatch({ type: SAGA_DELETE, register: data }, dispatch),
+})
+export default connect(
+    mapStateToProps,
+    mapDispatchToProps,
+)(User)

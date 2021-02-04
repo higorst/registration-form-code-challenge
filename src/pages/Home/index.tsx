@@ -1,10 +1,12 @@
 import React, { useState, useEffect } from 'react'
-import {
-    Text
-} from 'react-native'
 
 import { KeyboardAvoiding } from './styles'
 import { Constants } from '../../constants';
+
+// Redux
+import { connect } from "react-redux";
+// saga type
+import { SAGA_LOAD } from '../../redux/sagas/types';
 
 // components
 import Header from '../../components/Header';
@@ -21,11 +23,20 @@ interface UserType {
 function Home(props: any) {
     
     const [users, setUsers] = useState<UserType[]>([])
-    const [isRefreshing, setRefreshing] = useState(false);
-    
+    const [isRefreshing, setRefreshing] = useState(false)
+
     function handleOnRefresh() {
         setRefreshing(true)
+        props.load()
     }
+
+    useEffect(() => {
+        props.load()
+    }, [])
+    useEffect(() => {
+        setUsers(props.users)
+        setRefreshing(false)
+    }, [props.users])
 
     return (
         <KeyboardAvoiding>
@@ -42,4 +53,13 @@ function Home(props: any) {
 
 }
 
-export default Home
+const mapStateToProps = (state: any) => ({
+    users: state.register.users,
+})
+const mapDispatchToProps = (dispatch: any) => ({
+    load: () => dispatch({ type: SAGA_LOAD }, dispatch),
+})
+export default connect(
+    mapStateToProps,
+    mapDispatchToProps,
+)(Home)
