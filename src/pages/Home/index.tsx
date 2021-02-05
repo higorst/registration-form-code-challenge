@@ -20,7 +20,7 @@ interface UserType {
 
     load: any
 }
-function Home(props: any) {
+const Home = (props: any) => {
     
     const [users, setUsers] = useState<UserType[]>([])
     const [isRefreshing, setRefreshing] = useState(false)

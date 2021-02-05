@@ -12,7 +12,7 @@ interface PropsButton {
     sending?: boolean
     onPress?: any
 }
-function TouchableSendButton(props: PropsButton) {
+const TouchableSendButton = (props: PropsButton) => {
 
     return (
         <Touchable

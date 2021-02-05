@@ -19,7 +19,7 @@ interface Popuptype {
     onCancel: any
     onOk: any
 }
-function Popup(props: Popuptype) {
+const Popup = (props: Popuptype) => {
 
     return (
         <Dialog

@@ -21,7 +21,7 @@ interface UserType {
 
     delete?: any
 }
-function User(props: UserType) {
+const User = (props: UserType) => {
 
     const [showPopup, setShowPopup] = useState(false)
 
@@ -66,13 +66,9 @@ function User(props: UserType) {
     )
 }
 
-const mapStateToProps = (state: any) => ({
-    sending: state.register.sending,
-})
 const mapDispatchToProps = (dispatch: any) => ({
     delete: (data: UserType) => dispatch({ type: SAGA_DELETE, register: data }, dispatch),
 })
 export default connect(
-    mapStateToProps,
     mapDispatchToProps,
 )(User)

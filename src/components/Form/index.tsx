@@ -26,7 +26,7 @@ interface PropsType {
     send?: any
 }
 
-function Form(props: PropsType) {
+const Form = (props: PropsType) => {
 
     const [name, setName] = useState('')
     const [document, setDocument] = useState('')

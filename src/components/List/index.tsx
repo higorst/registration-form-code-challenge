@@ -16,7 +16,7 @@ interface UserType {
     document: number
     type: string
 }
-function Input(props: PropsList) {
+const Input = (props: PropsList) => {
 
     return (
         <ScrollView

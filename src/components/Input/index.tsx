@@ -12,7 +12,7 @@ interface PropsInput {
     sending?: boolean
     onlyNumber?: boolean
 }
-function Input(props: PropsInput) {
+const Input = (props: PropsInput) => {
 
     return (
         <InputText 

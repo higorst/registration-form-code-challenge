@@ -4,7 +4,7 @@ import { HeaderView, TitleHeader } from './styles'
 interface PropsHeader {
     title: string
 }
-function Header(props: PropsHeader) {
+const Header = (props: PropsHeader) => {
 
     return (
         <HeaderView>  
