@@ -18,7 +18,7 @@ import {
   SAGA_DELETE,
 } from './types'
 
-const sagas = function* rootSaga() {
+export default function* rootSaga() {
   yield all([
     takeLatest(SAGA_LOAD, sagaLoad),
     takeLatest(SAGA_SEND, sagaSend),
@@ -26,5 +26,3 @@ const sagas = function* rootSaga() {
     takeEvery(SAGA_DELETE, sagaDelete),
   ]);
 }
-
-export default sagas

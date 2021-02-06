@@ -6,5 +6,9 @@ module.exports = function (api) {
       'babel-preset-expo',
       '@babel/preset-typescript',
     ],
+    plugins: [
+      "@babel/plugin-transform-flow-strip-types",
+      "@babel/plugin-proposal-class-properties"
+    ]
   }
 }

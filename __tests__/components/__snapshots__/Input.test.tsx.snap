@@ -4,7 +4,6 @@ exports[`<Input /> renders Input Component correctly 1`] = `
 <TextInput
   allowFontScaling={true}
   autoCapitalize="words"
-  autoFocus={true}
   clearButtonMode="always"
   editable={true}
   keyboardType="default"

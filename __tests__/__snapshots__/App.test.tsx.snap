@@ -296,7 +296,6 @@ exports[`<App /> renders app correctly 1`] = `
                         <TextInput
                           allowFontScaling={true}
                           autoCapitalize="words"
-                          autoFocus={true}
                           clearButtonMode="always"
                           editable={true}
                           keyboardType="default"
@@ -330,7 +329,6 @@ exports[`<App /> renders app correctly 1`] = `
                         <TextInput
                           allowFontScaling={true}
                           autoCapitalize="words"
-                          autoFocus={true}
                           clearButtonMode="always"
                           editable={true}
                           keyboardType="number-pad"

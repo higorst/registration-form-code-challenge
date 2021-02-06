@@ -24,7 +24,6 @@ const Input = (props: PropsInput) => {
             autoCapitalize="words"
             clearButtonMode="always"
             keyboardType={props.onlyNumber ? 'number-pad' : 'default'}
-            autoFocus
         />
     )
 }

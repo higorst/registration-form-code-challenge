@@ -72,7 +72,6 @@ exports[`<Form /> renders Form Component correctly 1`] = `
   <TextInput
     allowFontScaling={true}
     autoCapitalize="words"
-    autoFocus={true}
     clearButtonMode="always"
     editable={true}
     keyboardType="default"
@@ -106,7 +105,6 @@ exports[`<Form /> renders Form Component correctly 1`] = `
   <TextInput
     allowFontScaling={true}
     autoCapitalize="words"
-    autoFocus={true}
     clearButtonMode="always"
     editable={true}
     keyboardType="number-pad"
