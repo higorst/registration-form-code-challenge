@@ -2,6 +2,8 @@ import { combineReducers } from "redux";
 
 import register from "./register";
 
-export default combineReducers({
+const ducks = combineReducers({
   register,
 });
+
+export default ducks
