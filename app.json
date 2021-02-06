@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "registration-form",
-    "slug": "registration-form",
+    "name": "App - Register Form",
+    "slug": "app-register-form",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -27,6 +27,8 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "description": "Formulário para cadastro de usuários (Pessoa Física ou Jurídica)",
+    "githubUrl": "https://github.com/higorst/registration-form-code-challenge"
   }
 }
