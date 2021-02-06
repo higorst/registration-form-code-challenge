@@ -23,4 +23,9 @@ export const messages = {
     messageErrorRequiredField: 'Campo Obrigatório',
     messageErrorIncorrectCPF: 'CPF Incorreto',
     messageErrorIncorrectCNPJ: 'CNPJ Incorreto',
+
+    messageConfirmRemove: 'Confirmar exclusão?',
+    titleButtonYes: 'Sim',
+    titleButtonNo: 'Não',
+    titleButtonRemove: 'Excluir',
 };

@@ -1,0 +1,51 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<TouchableSendButton /> renders TouchableSendButton Component correctly 1`] = `
+<View
+  accessible={true}
+  focusable={true}
+  onClick={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    Object {
+      "alignContent": "center",
+      "alignItems": "center",
+      "alignSelf": "center",
+      "backgroundColor": "#013893",
+      "borderColor": "#4e61c4",
+      "borderRadius": 10,
+      "borderWidth": 2,
+      "flexDirection": "row",
+      "justifyContent": "space-evenly",
+      "opacity": 1,
+      "paddingBottom": 15,
+      "paddingLeft": 15,
+      "paddingRight": 15,
+      "paddingTop": 15,
+      "width": 675,
+      "zIndex": 5,
+    }
+  }
+>
+  <Text
+    fontSize={18}
+    style={
+      Array [
+        Object {
+          "color": "#ffffff",
+          "fontSize": 18,
+          "fontWeight": "bold",
+          "textAlign": "center",
+        },
+      ]
+    }
+  >
+    Enviado Snapshot
+  </Text>
+</View>
+`;

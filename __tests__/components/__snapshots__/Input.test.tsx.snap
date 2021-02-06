@@ -1,0 +1,37 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Input /> renders Input Component correctly 1`] = `
+<TextInput
+  allowFontScaling={true}
+  autoCapitalize="words"
+  clearButtonMode="always"
+  editable={true}
+  keyboardType="default"
+  onChangeText={[Function]}
+  placeholder="Snapshot"
+  placeholderTextColor="#d0cfd0"
+  rejectResponderTermination={true}
+  style={
+    Array [
+      Object {
+        "alignContent": "center",
+        "alignSelf": "center",
+        "backgroundColor": "#ffffff",
+        "borderRadius": 10,
+        "fontSize": 16,
+        "marginBottom": 10,
+        "marginLeft": 5,
+        "marginRight": 5,
+        "marginTop": 5,
+        "paddingBottom": 10,
+        "paddingLeft": 10,
+        "paddingRight": 10,
+        "paddingTop": 10,
+        "width": 675,
+      },
+    ]
+  }
+  underlineColorAndroid="transparent"
+  value="Snapshot"
+/>
+`;

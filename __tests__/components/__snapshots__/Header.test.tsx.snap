@@ -1,0 +1,36 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Header /> renders Header Component correctly 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "backgroundColor": "#4e61c4",
+        "borderBottomLeftRadius": 100,
+        "borderBottomRightRadius": 100,
+        "borderBottomWidth": 1,
+        "borderColor": "#ffffff",
+        "marginBottom": 10,
+        "paddingBottom": 10,
+        "paddingLeft": 10,
+        "paddingRight": 10,
+        "paddingTop": 10,
+      },
+    ]
+  }
+>
+  <Text
+    style={
+      Array [
+        Object {
+          "color": "#ffffff",
+          "fontSize": 22,
+          "textAlign": "center",
+        },
+      ]
+    }
+  >
+    Snapshot
+  </Text>
+</View>
+`;

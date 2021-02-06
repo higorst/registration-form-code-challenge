@@ -5,18 +5,26 @@ import { Colors } from '../../styles/Colors'
 interface PropsTypeUser extends ViewProps {
     color: string
 }
-interface PropsCard extends ViewProps {
+interface CardType extends ViewProps {
     borderColor: string
 }
+interface TouchableType extends ViewProps {
+    color: string
+}
+interface MessageType extends ViewProps {
+    italic?: boolean
+    marginLeft?: boolean
+}
 
-export const Touchable = styled.TouchableOpacity`
-    padding: 5px;
-    justify-content: center;
-    align-items: center;
+export const Message = styled.Text`
+    font-size: 16px;
+    text-align: center;
+    max-width: ${`${Dimensions.get('window').width * 0.6}px`};
 
-    border-radius: 5px; 
-
-    background-color: ${Colors.red};
+    font-style: ${(props: MessageType) => props.italic ? 'italic' : 'normal' };
+    margin-left: ${(props: MessageType) => props.marginLeft ? 
+                    `${Dimensions.get('window').width * 0.09}px` : '0px' };
+    color: ${Colors.white};
 `
 export const Card = styled.View`
     flex: 1;
@@ -27,21 +35,16 @@ export const Card = styled.View`
     margin: 5px;
 
     border-width: 2px;
-    border-color: ${(props: PropsCard) => props.borderColor };
+    border-color: ${(props: CardType) => props.borderColor };
     border-radius: 10px;
 `
-export const UserAndType = styled.View<ViewProps>`
-    flex: 1;
-    flex-direction: row;
-    justify-content: flex-start;
-`
-export const DocumentAndButton = styled.View<ViewProps>`
+
+export const Row = styled.View<ViewProps>`
     flex: 1;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    margin: 2px;
-    margin-left: 35px;
+    margin: 3px;
 `
 export const TypeUser = styled.View`
     width: 20px;
@@ -52,14 +55,10 @@ export const TypeUser = styled.View`
 `
 export const NameUser = styled.Text`
     color: ${Colors.white};
-    text-align: center;  
-    font-size: 16px;
+    width: ${`${Dimensions.get('window').width * 0.78}px`};
+
+    text-align: left;  
+    font-size: 18px;
     font-weight: bold;
     margin-left: 15px;
-`
-export const DocumentUser = styled.Text`
-    color: ${Colors.white};
-    text-align: center;  
-    font-style: italic;
-    font-size: 16px;
 `
