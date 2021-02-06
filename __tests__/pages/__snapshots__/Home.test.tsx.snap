@@ -1,0 +1,298 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Home /> renders home correctly 1`] = `
+<View
+  onLayout={[Function]}
+  style={
+    Array [
+      Object {
+        "backgroundColor": "#4e61c4",
+        "flexBasis": 0,
+        "flexGrow": 1,
+        "flexShrink": 1,
+      },
+    ]
+  }
+>
+  <View
+    style={
+      Array [
+        Object {
+          "backgroundColor": "#4e61c4",
+          "borderBottomLeftRadius": 100,
+          "borderBottomRightRadius": 100,
+          "borderBottomWidth": 1,
+          "borderColor": "#ffffff",
+          "marginBottom": 10,
+          "paddingBottom": 10,
+          "paddingLeft": 10,
+          "paddingRight": 10,
+          "paddingTop": 10,
+        },
+      ]
+    }
+  >
+    <Text
+      style={
+        Array [
+          Object {
+            "color": "#ffffff",
+            "fontSize": 22,
+            "textAlign": "center",
+          },
+        ]
+      }
+    >
+      Formulário
+    </Text>
+  </View>
+  <View
+    onLayout={[Function]}
+    style={
+      Array [
+        Object {
+          "backgroundColor": "#4e61c4",
+          "marginBottom": 20,
+          "marginTop": 20,
+          "paddingBottom": 10,
+          "paddingLeft": 10,
+          "paddingRight": 10,
+          "paddingTop": 10,
+          "width": 750,
+        },
+      ]
+    }
+  >
+    <View
+      onLayout={[Function]}
+      style={
+        Array [
+          Object {
+            "flexDirection": "row",
+            "justifyContent": "space-between",
+            "marginBottom": 10,
+            "width": 675,
+          },
+        ]
+      }
+    >
+      <RCTSwitch
+        accessibilityRole="switch"
+        disabled={false}
+        onChange={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        onTintColor="#f4f3f4"
+        style={
+          Array [
+            Object {
+              "height": 31,
+              "width": 51,
+            },
+            Object {
+              "backgroundColor": "#3e3e3e",
+              "borderRadius": 16,
+            },
+          ]
+        }
+        thumbTintColor="#ff6a00"
+        tintColor="#f4f3f4"
+        value={true}
+      />
+      <Text
+        style={
+          Array [
+            Object {
+              "color": "#ffffff",
+              "fontSize": 14,
+              "fontStyle": "italic",
+              "fontWeight": "bold",
+            },
+          ]
+        }
+      >
+        Pessoa Física
+      </Text>
+    </View>
+    <TextInput
+      allowFontScaling={true}
+      autoCapitalize="words"
+      autoFocus={true}
+      clearButtonMode="always"
+      editable={true}
+      keyboardType="default"
+      onChangeText={[Function]}
+      placeholder="Nome"
+      placeholderTextColor="#d0cfd0"
+      rejectResponderTermination={true}
+      style={
+        Array [
+          Object {
+            "alignContent": "center",
+            "alignSelf": "center",
+            "backgroundColor": "#ffffff",
+            "borderRadius": 10,
+            "fontSize": 16,
+            "marginBottom": 10,
+            "marginLeft": 5,
+            "marginRight": 5,
+            "marginTop": 5,
+            "paddingBottom": 10,
+            "paddingLeft": 10,
+            "paddingRight": 10,
+            "paddingTop": 10,
+            "width": 675,
+          },
+        ]
+      }
+      underlineColorAndroid="transparent"
+      value=""
+    />
+    <TextInput
+      allowFontScaling={true}
+      autoCapitalize="words"
+      autoFocus={true}
+      clearButtonMode="always"
+      editable={true}
+      keyboardType="number-pad"
+      onChangeText={[Function]}
+      placeholder="CPF"
+      placeholderTextColor="#d0cfd0"
+      rejectResponderTermination={true}
+      style={
+        Array [
+          Object {
+            "alignContent": "center",
+            "alignSelf": "center",
+            "backgroundColor": "#ffffff",
+            "borderRadius": 10,
+            "fontSize": 16,
+            "marginBottom": 10,
+            "marginLeft": 5,
+            "marginRight": 5,
+            "marginTop": 5,
+            "paddingBottom": 10,
+            "paddingLeft": 10,
+            "paddingRight": 10,
+            "paddingTop": 10,
+            "width": 675,
+          },
+        ]
+      }
+      underlineColorAndroid="transparent"
+      value=""
+    />
+    <View
+      accessible={true}
+      focusable={true}
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Object {
+          "alignContent": "center",
+          "alignItems": "center",
+          "alignSelf": "center",
+          "backgroundColor": "#013893",
+          "borderColor": "#4e61c4",
+          "borderRadius": 10,
+          "borderWidth": 2,
+          "flexDirection": "row",
+          "justifyContent": "space-evenly",
+          "opacity": 1,
+          "paddingBottom": 15,
+          "paddingLeft": 15,
+          "paddingRight": 15,
+          "paddingTop": 15,
+          "width": 675,
+          "zIndex": 5,
+        }
+      }
+    >
+      <Text
+        fontSize={18}
+        style={
+          Array [
+            Object {
+              "color": "#ffffff",
+              "fontSize": 18,
+              "fontWeight": "bold",
+              "textAlign": "center",
+            },
+          ]
+        }
+      >
+        Enviar
+      </Text>
+    </View>
+  </View>
+  <View
+    style={
+      Array [
+        Object {
+          "backgroundColor": "#4e61c4",
+          "borderBottomLeftRadius": 100,
+          "borderBottomRightRadius": 100,
+          "borderBottomWidth": 1,
+          "borderColor": "#ffffff",
+          "marginBottom": 10,
+          "paddingBottom": 10,
+          "paddingLeft": 10,
+          "paddingRight": 10,
+          "paddingTop": 10,
+        },
+      ]
+    }
+  >
+    <Text
+      style={
+        Array [
+          Object {
+            "color": "#ffffff",
+            "fontSize": 22,
+            "textAlign": "center",
+          },
+        ]
+      }
+    >
+      Usuários
+    </Text>
+  </View>
+  <RCTScrollView
+    refreshControl={
+      <RefreshControlMock
+        colors={
+          Array [
+            "#ff6a00",
+          ]
+        }
+        onRefresh={[Function]}
+        refreshing={false}
+        tintColor="#ff6a00"
+      />
+    }
+  >
+    <RCTRefreshControl />
+    <View>
+      <View
+        style={
+          Array [
+            Object {
+              "flexDirection": "column",
+              "justifyContent": "center",
+              "paddingBottom": 5,
+              "paddingLeft": 5,
+              "paddingRight": 5,
+              "paddingTop": 5,
+            },
+          ]
+        }
+      />
+    </View>
+  </RCTScrollView>
+</View>
+`;

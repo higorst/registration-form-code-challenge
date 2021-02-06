@@ -10,8 +10,8 @@ import { SAGA_LOAD } from '../../redux/sagas/types';
 
 // components
 import Header from '../../components/Header';
-import List from '../../components/List';
 import Form from '../../components/Form';
+import List from '../../components/List';
 
 interface UserType {
     name: string

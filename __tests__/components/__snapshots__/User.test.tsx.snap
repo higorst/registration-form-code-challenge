@@ -1,0 +1,131 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<User /> render User Component correctly 1`] = `
+<View
+  borderColor="#ff6a00"
+  style={
+    Array [
+      Object {
+        "borderColor": "#ff6a00",
+        "borderRadius": 10,
+        "borderWidth": 2,
+        "flexBasis": 0,
+        "flexDirection": "column",
+        "flexGrow": 1,
+        "flexShrink": 1,
+        "justifyContent": "space-between",
+        "marginBottom": 5,
+        "marginLeft": 5,
+        "marginRight": 5,
+        "marginTop": 5,
+        "paddingBottom": 10,
+        "paddingLeft": 10,
+        "paddingRight": 10,
+        "paddingTop": 10,
+      },
+    ]
+  }
+>
+  <View
+    style={
+      Array [
+        Object {
+          "flexBasis": 0,
+          "flexDirection": "row",
+          "flexGrow": 1,
+          "flexShrink": 1,
+          "justifyContent": "flex-start",
+        },
+      ]
+    }
+  >
+    <View
+      color="#ff6a00"
+      style={
+        Array [
+          Object {
+            "backgroundColor": "#ff6a00",
+            "borderRadius": 20,
+            "height": 20,
+            "width": 20,
+          },
+        ]
+      }
+    />
+    <Text
+      style={
+        Array [
+          Object {
+            "color": "#ffffff",
+            "fontSize": 16,
+            "fontWeight": "bold",
+            "marginLeft": 15,
+            "textAlign": "center",
+          },
+        ]
+      }
+    >
+      Snapshot
+    </Text>
+  </View>
+  <View
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "flexBasis": 0,
+          "flexDirection": "row",
+          "flexGrow": 1,
+          "flexShrink": 1,
+          "justifyContent": "space-between",
+          "marginBottom": 2,
+          "marginLeft": 35,
+          "marginRight": 2,
+          "marginTop": 2,
+        },
+      ]
+    }
+  >
+    <Text
+      style={
+        Array [
+          Object {
+            "color": "#ffffff",
+            "fontSize": 16,
+            "fontStyle": "italic",
+            "textAlign": "center",
+          },
+        ]
+      }
+    >
+      CPF: 111.111.111-11
+    </Text>
+    <View
+      accessible={true}
+      focusable={true}
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Object {
+          "alignItems": "center",
+          "backgroundColor": "#da4f42",
+          "borderRadius": 5,
+          "justifyContent": "center",
+          "opacity": 1,
+          "paddingBottom": 5,
+          "paddingLeft": 5,
+          "paddingRight": 5,
+          "paddingTop": 5,
+        }
+      }
+    >
+      <Text />
+    </View>
+  </View>
+</View>
+`;

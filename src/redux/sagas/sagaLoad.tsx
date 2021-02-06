@@ -1,7 +1,5 @@
 import { call, all, put, delay } from "redux-saga/effects";
 
-import { connect } from "react-redux";
-import { bindActionCreators } from "redux";
 import { Types } from "../ducks/register";
 
 import * as firebase from 'firebase'

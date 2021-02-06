@@ -16,7 +16,7 @@ interface UserType {
     document: number
     type: string
 }
-const Input = (props: PropsList) => {
+const List = (props: PropsList) => {
 
     return (
         <ScrollView
@@ -40,4 +40,4 @@ const Input = (props: PropsList) => {
     )
 }
 
-export default Input
+export default List
