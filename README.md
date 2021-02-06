@@ -13,7 +13,7 @@ Os campos apresentam erros de validação conforme:
 - Validação do formato de um cnpj (pessoa jurídica);
 
 Abaixo, segue uma demonstração do funcionamento do mesmo.
-<div style="text-align:center"><img src="/assets/app.gif"  width="250" /></div>
+<div style="text-align:center"><img src="/assets/app.gif"  width="300" /></div>
 
 # Executar projeto
 
